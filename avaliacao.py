@@ -5,11 +5,11 @@ import arquivoJson
 
 def main():
         usuarios = {}
-        opcao = input("Selecione a opcao\n" + 
-                "Digite I para inserir um usuario\n" +
-                "Digite A para consultar usuario por nivel de acesso\n" +
-                "Digite D para consultar usuario por departamento\n" +
-                "Digite L para ler os dados do arquivo JSON\n").upper()
+        opcao = input("Selecione a opcao \n" + 
+                "Digite I para inserir um usuario \n" +
+                "Digite A para consultar usuario por nivel de acesso \n" +
+                "Digite D para consultar usuario por departamento \n" +
+                "Digite L para ler os dados do arquivo JSON \n").upper()
 
         contador = 0
                 

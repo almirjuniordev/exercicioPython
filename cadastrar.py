@@ -11,8 +11,6 @@ def armazenarUsuario(id):
         "Cargo" : input("Digite o cargo: "),
         "Acesso": nivelAcesso(),
         "Data": getData(),
-        # "Data": datetime.datetime.now().day +"/"+ datetime.datetime.now().month +"/"+ datetime.datetime.now().year,
-        # "Departamento": input("Digite o departamento: "),
         "Departamento": cadastrarDepartamento(),
         "Historico": input("Digite o historico: "),
     }
@@ -49,6 +47,6 @@ def nivelAcesso():
                 "Digite S para SuperUsuario\n").upper()
 
 def getData():
-    return   datetime.datetime.now().day +"/"+ datetime.datetime.now().month +"/"+ datetime.datetime.now().year + " " + datetime.datetime.now().hour + ":" + datetime.datetime.now().minute,              
+    return datetime.datetime.now().strftime("%d/%m/%y - %H:%M")
 
 
