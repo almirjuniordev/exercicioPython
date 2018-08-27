@@ -8,8 +8,8 @@ def armazenarUsuario(id):
         "Nome" : input("Digite o nome: "),
         "Nome Reduzido": input("Digite o nome reduzido: "),
         "Cargo" : input("Digite o cargo: "),
-        # "Acesso": input("Digite o nome de acesso: "),
         "Acesso": nivelAcesso(),
+        "Data": getData(),
         # "Data": datetime.datetime.now().day +"/"+ datetime.datetime.now().month +"/"+ datetime.datetime.now().year,
         "Departamento": input("Digite o departamento: "),
         "Historico": input("Digite o historico: "),
@@ -45,6 +45,8 @@ def nivelAcesso():
                 "Digite A para Administrativo\n" +
                 "Digite T para Tecnico\n" +
                 "Digite S para SuperUsuario\n").upper()
-                
+
+def getData():
+    return   datetime.datetime.now().day +"/"+ datetime.datetime.now().month +"/"+ datetime.datetime.now().year + " " + datetime.datetime.now().hour + ":" + datetime.datetime.now().minute,              
 
 
