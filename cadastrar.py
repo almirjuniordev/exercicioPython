@@ -1,6 +1,7 @@
 #usr/bin/python3
 
 import datetime
+from departamento import cadastrarDepartamento
 
 def armazenarUsuario(id):
     usuario = {
@@ -11,7 +12,8 @@ def armazenarUsuario(id):
         "Acesso": nivelAcesso(),
         "Data": getData(),
         # "Data": datetime.datetime.now().day +"/"+ datetime.datetime.now().month +"/"+ datetime.datetime.now().year,
-        "Departamento": input("Digite o departamento: "),
+        # "Departamento": input("Digite o departamento: "),
+        "Departamento": cadastrarDepartamento(),
         "Historico": input("Digite o historico: "),
     }
 
